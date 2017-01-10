@@ -1,4 +1,6 @@
 # protoc-go-inject-field
+[![Build Status](https://travis-ci.org/favadi/protoc-go-inject-field.svg?branch=master)](https://travis-ci.org/favadi/protoc-go-inject-field)
+[![Go Report Card](https://goreportcard.com/badge/github.com/favadi/protoc-go-inject-field)](https://goreportcard.com/report/github.com/favadi/protoc-go-inject-field)
 
 ## Why?
 
