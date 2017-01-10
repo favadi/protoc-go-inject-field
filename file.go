@@ -73,7 +73,10 @@ func parseFile(inputPath string) (areas []textArea, err error) {
 
 			area.fields = append(area.fields, field)
 		}
-		areas = append(areas, area)
+
+		if len(area.fields) != 0 {
+			areas = append(areas, area)
+		}
 	}
 	return
 }
