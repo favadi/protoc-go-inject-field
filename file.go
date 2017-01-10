@@ -94,7 +94,7 @@ func writeFile(inputPath string, areas []textArea) (err error) {
 		return
 	}
 
-	// inject custom tags from tail of file first to preserve order
+	// inject custom fields from the end of file first to preserve order
 	for i := len(areas) - 1; i >= 0; i-- {
 		contents = injectField(contents, areas[i])
 	}
@@ -102,6 +102,6 @@ func writeFile(inputPath string, areas []textArea) (err error) {
 		return
 	}
 
-	log.Printf("file %q is injected with custom tags", inputPath)
+	log.Printf("file %q is injected with custom fields", inputPath)
 	return
 }
